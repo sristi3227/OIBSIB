@@ -73,7 +73,7 @@ class Account {
         if (balance >= amount) {
             balance -= amount;
             System.out.println("your money has been withdrawn successfully");
-            System.out.println("your current balance is "+ balance);
+            System.out.println("your current balance is Rs."+ balance);
             
         } else {
             System.out.println("Insufficient balance");
@@ -124,7 +124,8 @@ class ATM {
     public void showMenu() {
         Scanner scanner = new Scanner(System.in);
         int choice;
-        double withdrawAmount =0, depositAmount=0, transfer=0, accountno=0;
+        double withdrawAmount =0, depositAmount=0, transfer=0; 
+        int accountno=0;
         do {
             System.out.println("\nATM Menu:");
             System.out.println("1. Choose 1 to view Transaction History");
